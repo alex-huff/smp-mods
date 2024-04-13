@@ -1,0 +1,93 @@
+[submodule "architectury-api"]
+	path = architectury-api
+	url = ssh://git@github.com/alex-huff/architectury-api
+[submodule "cloth-config"]
+	path = cloth-config
+	url = ssh://git@github.com/alex-huff/cloth-config
+[submodule "Continuity"]
+	path = Continuity
+	url = ssh://git@github.com/alex-huff/Continuity
+[submodule "distant-horizons"]
+	path = distant-horizons
+	url = ssh://git@gitlab.com/alex-huff/distant-horizons
+[submodule "EnhancedBlockEntities"]
+	path = EnhancedBlockEntities
+	url = ssh://git@github.com/alex-huff/EnhancedBlockEntities
+[submodule "fabric"]
+	path = fabric
+	url = ssh://git@github.com/alex-huff/fabric
+[submodule "fabric-carpet"]
+	path = fabric-carpet
+	url = ssh://git@github.com/alex-huff/fabric-carpet
+[submodule "fabricskyboxes"]
+	path = fabricskyboxes
+	url = ssh://git@github.com/alex-huff/fabricskyboxes
+[submodule "horseinfomod"]
+	path = horseinfomod
+	url = ssh://git@github.com/alex-huff/horseinfomod
+[submodule "Indium"]
+	path = Indium
+	url = ssh://git@github.com/alex-huff/Indium
+[submodule "Iris"]
+	path = Iris
+	url = ssh://git@github.com/alex-huff/Iris
+[submodule "itemscroller"]
+	path = itemscroller
+	url = ssh://git@github.com/alex-huff/itemscroller
+[submodule "lazydfu"]
+	path = lazydfu
+	url = ssh://git@github.com/alex-huff/lazydfu
+[submodule "litematica"]
+	path = litematica
+	url = ssh://git@github.com/alex-huff/litematica
+[submodule "malilib"]
+	path = malilib
+	url = ssh://git@github.com/alex-huff/malilib
+[submodule "mc-cli"]
+	path = mc-cli
+	url = ssh://git@github.com/alex-huff/mc-cli
+[submodule "MidnightControls"]
+	path = MidnightControls
+	url = ssh://git@github.com/alex-huff/MidnightControls
+[submodule "ModMenu"]
+	path = ModMenu
+	url = ssh://git@github.com/alex-huff/ModMenu
+[submodule "reeses-sodium-options"]
+	path = reeses-sodium-options
+	url = ssh://git@github.com/alex-huff/reeses-sodium-options
+[submodule "ReplayMod"]
+	path = ReplayMod
+	url = ssh://git@github.com/alex-huff/ReplayMod
+[submodule "RoughlyEnoughItems"]
+	path = RoughlyEnoughItems
+	url = ssh://git@github.com/alex-huff/RoughlyEnoughItems
+[submodule "SharedWaypointsFabricClient"]
+	path = SharedWaypointsFabricClient
+	url = ssh://git@github.com/alex-huff/SharedWaypointsFabricClient
+[submodule "ShulkerBoxTooltip"]
+	path = ShulkerBoxTooltip
+	url = ssh://git@github.com/alex-huff/ShulkerBoxTooltip
+[submodule "sodium-extra-fabric"]
+	path = sodium-extra-fabric
+	url = ssh://git@github.com/alex-huff/sodium-extra-fabric
+[submodule "sodium-fabric"]
+	path = sodium-fabric
+	url = ssh://git@github.com/alex-huff/sodium-fabric
+[submodule "syncmatica"]
+	path = syncmatica
+	url = ssh://git@github.com/alex-huff/syncmatica
+[submodule "tweakermore"]
+	path = tweakermore
+	url = ssh://git@github.com/alex-huff/tweakermore
+[submodule "tweakeroo"]
+	path = tweakeroo
+	url = ssh://git@github.com/alex-huff/tweakeroo
+[submodule "simple-voice-chat"]
+	path = simple-voice-chat
+	url = ssh://git@github.com/alex-huff/simple-voice-chat
+[submodule "WorldEdit"]
+	path = WorldEdit
+	url = ssh://git@github.com/alex-huff/WorldEdit
+[submodule "WorldEditCUI"]
+	path = WorldEditCUI
+	url = ssh://git@github.com/alex-huff/WorldEditCUI
