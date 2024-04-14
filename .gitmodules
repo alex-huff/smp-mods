@@ -1,93 +1,123 @@
 [submodule "architectury-api"]
 	path = architectury-api
 	url = ssh://git@github.com/alex-huff/architectury-api
+	branch = 1.20
 [submodule "cloth-config"]
 	path = cloth-config
 	url = ssh://git@github.com/alex-huff/cloth-config
+	branch = v11
 [submodule "Continuity"]
 	path = Continuity
 	url = ssh://git@github.com/alex-huff/Continuity
 [submodule "distant-horizons"]
 	path = distant-horizons
 	url = ssh://git@gitlab.com/alex-huff/distant-horizons
+	branch = main
 [submodule "EnhancedBlockEntities"]
 	path = EnhancedBlockEntities
 	url = ssh://git@github.com/alex-huff/EnhancedBlockEntities
+	branch = 1.20
 [submodule "fabric"]
 	path = fabric
 	url = ssh://git@github.com/alex-huff/fabric
+	branch = 1.20.1
 [submodule "fabric-carpet"]
 	path = fabric-carpet
 	url = ssh://git@github.com/alex-huff/fabric-carpet
+	branch = master
 [submodule "fabricskyboxes"]
 	path = fabricskyboxes
 	url = ssh://git@github.com/alex-huff/fabricskyboxes
+	branch = 1.20.x/dev
 [submodule "horseinfomod"]
 	path = horseinfomod
 	url = ssh://git@github.com/alex-huff/horseinfomod
+	branch = 1.20.1
 [submodule "Indium"]
 	path = Indium
 	url = ssh://git@github.com/alex-huff/Indium
+	branch = 1.20.x/main
 [submodule "Iris"]
 	path = Iris
 	url = ssh://git@github.com/alex-huff/Iris
+	branch = 1.20.1
 [submodule "itemscroller"]
 	path = itemscroller
 	url = ssh://git@github.com/alex-huff/itemscroller
+	branch = pre-rewrite/fabric/1.20.x
 [submodule "lazydfu"]
 	path = lazydfu
 	url = ssh://git@github.com/alex-huff/lazydfu
+	branch = master
 [submodule "litematica"]
 	path = litematica
 	url = ssh://git@github.com/alex-huff/litematica
+	branch = pre-rewrite/fabric/1.20.x
 [submodule "malilib"]
 	path = malilib
 	url = ssh://git@github.com/alex-huff/malilib
+	branch = pre-rewrite/fabric/1.20.x
 [submodule "mc-cli"]
 	path = mc-cli
 	url = ssh://git@github.com/alex-huff/mc-cli
+	branch = 1.20.1
 [submodule "MidnightControls"]
 	path = MidnightControls
 	url = ssh://git@github.com/alex-huff/MidnightControls
+	branch = 1.20
 [submodule "ModMenu"]
 	path = ModMenu
 	url = ssh://git@github.com/alex-huff/ModMenu
+	branch = 1.20.1
 [submodule "reeses-sodium-options"]
 	path = reeses-sodium-options
 	url = ssh://git@github.com/alex-huff/reeses-sodium-options
+	branch = 1.20.x/dev
 [submodule "ReplayMod"]
 	path = ReplayMod
 	url = ssh://git@github.com/alex-huff/ReplayMod
+	branch = stable
 [submodule "RoughlyEnoughItems"]
 	path = RoughlyEnoughItems
 	url = ssh://git@github.com/alex-huff/RoughlyEnoughItems
+	branch = 12.x-1.20
 [submodule "SharedWaypointsFabricClient"]
 	path = SharedWaypointsFabricClient
 	url = ssh://git@github.com/alex-huff/SharedWaypointsFabricClient
+	branch = 1.20.1
 [submodule "ShulkerBoxTooltip"]
 	path = ShulkerBoxTooltip
 	url = ssh://git@github.com/alex-huff/ShulkerBoxTooltip
+	branch = l10n_1.20.x
 [submodule "sodium-extra-fabric"]
 	path = sodium-extra-fabric
 	url = ssh://git@github.com/alex-huff/sodium-extra-fabric
+	branch = 1.20.x/dev
 [submodule "sodium-fabric"]
 	path = sodium-fabric
 	url = ssh://git@github.com/alex-huff/sodium-fabric
+	branch = dev
 [submodule "syncmatica"]
 	path = syncmatica
 	url = ssh://git@github.com/alex-huff/syncmatica
+	branch = migrate_to_1.20
 [submodule "tweakermore"]
 	path = tweakermore
 	url = ssh://git@github.com/alex-huff/tweakermore
+	branch = stable
 [submodule "tweakeroo"]
 	path = tweakeroo
 	url = ssh://git@github.com/alex-huff/tweakeroo
+	branch = pre-rewrite/fabric/1.20.x
 [submodule "simple-voice-chat"]
 	path = simple-voice-chat
 	url = ssh://git@github.com/alex-huff/simple-voice-chat
+	branch = 1.20.1
 [submodule "WorldEdit"]
 	path = WorldEdit
 	url = ssh://git@github.com/alex-huff/WorldEdit
+	branch = master
 [submodule "WorldEditCUI"]
 	path = WorldEditCUI
 	url = ssh://git@github.com/alex-huff/WorldEditCUI
+	branch = master
