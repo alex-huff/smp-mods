@@ -20,7 +20,7 @@
 	},
 	"fabric-api": {
 		"working-directory": "fabric",
-		"artifact-regex": "fabric-api-[0-9]+\\.[0-9]+\\.[0-9]+\\+local-[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
+		"artifact-regex": "fabric-api-[0-9]+\\.[0-9]+\\.[0-9]+\\+local-(HEAD|[0-9]+\\.[0-9]+(\\.[0-9]+)?)\\.jar"
 	},
 	"carpet": {
 		"working-directory": "fabric-carpet",
@@ -63,7 +63,7 @@
 	},
 	"mod-menu": {
 		"working-directory": "ModMenu",
-		"artifact-regex": "modmenu-v[0-9]+\\.[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.[0-9a-z]+\\.jar"
+		"artifact-regex": "modmenu-v[0-9]+\\.[0-9]+\\.[0-9]+\\+(unknown|[0-9]+\\.[0-9]+(\\.[0-9]+)?)\\.[0-9a-z]+\\.jar"
 	},
 	"reeses-sodium-options": {
 		"artifact-regex": "reeses_sodium_options-[0-9]+\\.[0-9]+\\.[0-9]+\\+mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-(rev\\.)?[0-9a-z]+\\.jar"
