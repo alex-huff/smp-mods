@@ -1,0 +1,75 @@
+#!/bin/python
+import os
+import sys
+import shutil
+import subprocess
+import regex
+import json
+import argparse
+
+DEFAULT_BUILD_COMMAND = './gradlew build'
+DEFAULT_ARTIFACT_DIRECTORY = 'build/libs'
+WORKING_DIRECTORY_KEY = 'working-directory'
+BUILD_COMMAND_KEY = 'build-command'
+ARTIFACT_DIRECTORY_KEY = 'artifact-directory'
+ARTIFACT_REGEX_KEY = 'artifact-regex'
+MODS_FOLDER = 'mods'
+
+script_directory = os.path.dirname(os.path.realpath(__file__))
+os.chdir(script_directory)
+with open('build.json', 'r') as json_file:
+	json_object = json.load(json_file)
+mods = [key for key in json_object.keys()]
+
+class ListModsAction(argparse.Action):
+	def __call__(self, parser, namespace, values, option_string=None):
+		print('\n'.join(mods))
+		parser.exit()
+
+argument_parser = argparse.ArgumentParser(prog='build', description='builder for SMP mods')
+argument_parser.add_argument('--list-mods', action=ListModsAction, nargs=0, help="list mods and exit")
+argument_parser.add_argument('mods', nargs='*', help="the mods to build, or all if omitted")
+arguments = argument_parser.parse_args()
+
+to_build = arguments.mods if arguments.mods else mods
+invalid_mods = [mod_name for mod_name in to_build if mod_name not in mods]
+if invalid_mods:
+	print(f'invalid mod name: {", ".join(invalid_mods)}', file=sys.stderr)
+	sys.exit(1)
+mods_missing_artifact_regex = [mod_name for mod_name in to_build if ARTIFACT_REGEX_KEY not in json_object[mod_name]]
+if mods_missing_artifact_regex:
+	print(f'{", ".join(mods_missing_artifact_regex)} missing required key "artifact-regex"', file=sys.stderr)
+	sys.exit(1)
+
+artifacts = []
+for mod_name in to_build:
+	mod = json_object[mod_name]
+	working_directory = mod[WORKING_DIRECTORY_KEY] if WORKING_DIRECTORY_KEY in mod else mod_name
+	build_command = mod[BUILD_COMMAND_KEY] if BUILD_COMMAND_KEY in mod else DEFAULT_BUILD_COMMAND
+	artifact_directory = mod[ARTIFACT_DIRECTORY_KEY] if ARTIFACT_DIRECTORY_KEY in mod else DEFAULT_ARTIFACT_DIRECTORY
+	artifact_regex = mod[ARTIFACT_REGEX_KEY]
+
+	print(f'building mod: {mod_name}')
+	build_process = subprocess.Popen(build_command, cwd=working_directory, shell=True)
+	if build_process.wait() != 0:
+		print(f'failed building mod: {mod_name}', file=sys.stderr)
+		sys.exit(1)
+	print('')
+	artifact_directory_path = os.path.join(working_directory, artifact_directory)
+	compiled_artifact_regex = regex.compile(artifact_regex)
+	matching_files = [os.path.join(artifact_directory_path, file_name) for file_name in os.listdir(artifact_directory_path) if compiled_artifact_regex.match(file_name)]
+	if not matching_files:
+		print(f'no files in {artifact_directory_path} matched regex "{artifact_regex}" for mod {mod_name}', file=sys.stderr)
+		sys.exit(1)
+	matching_files.sort(key=lambda f: os.path.getmtime(f))
+	artifact_path = matching_files[-1]
+	artifacts.append(artifact_path)
+
+mods_path = os.path.join(script_directory, MODS_FOLDER)
+try:
+	os.mkdir(mods_path)
+except FileExistsError:
+	pass
+for artifact in artifacts:
+	print(f'copying {artifact} to mods folder')
+	shutil.copy(artifact, mods_path)
