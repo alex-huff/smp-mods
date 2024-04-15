@@ -2,121 +2,121 @@
 	"architectury-api": {
 		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
-		"artifact-regex": "architectury-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*fabric\\.jar"
 	},
 	"cloth-config": {
 		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
-		"artifact-regex": "cloth-config-[0-9]+\\.[0-9]+\\.[0-9]+-fabric\\.jar"
+		"artifact-regex": ".*fabric\\.jar"
 	},
 	"distant-horizons": {
 		"build-command": "./gradlew :fabric:assemble -PmcVer=1.20.1 && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
-		"artifact-regex": "DistantHorizons-fabric-[0-9]+\\.[0-9]+\\.[0-9]+-a-dev-[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"enchanced-block-entities": {
 		"working-directory": "EnhancedBlockEntities",
-		"artifact-regex": "enhancedblockentities-[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"fabric-api": {
 		"working-directory": "fabric",
-		"artifact-regex": "fabric-api-[0-9]+\\.[0-9]+\\.[0-9]+\\+local-(HEAD|[0-9]+\\.[0-9]+(\\.[0-9]+)?)\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"carpet": {
 		"working-directory": "fabric-carpet",
-		"artifact-regex": "fabric-carpet-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\+v[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"fabric-skyboxes": {
 		"working-directory": "fabricskyboxes",
-		"artifact-regex": "fabricskyboxes-[0-9]+\\.[0-9]+\\.[0-9]+\\+mc[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"horseinfomod": {
-		"artifact-regex": "horseinfomod-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"indium": {
 		"working-directory": "Indium",
-		"artifact-regex": "indium-[0-9]+\\.[0-9]+\\.[0-9]+\\+mc[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"iris": {
 		"working-directory": "Iris",
 		"build-command": "$JAVA_HOME/bin/java -jar brachyura-bootstrap-0.jar build",
-		"artifact-regex": "iris-mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+nogit\\.jar"
+		"artifact-regex": ".*\\.jar"
 	},
 	"itemscroller": {
-		"artifact-regex": "itemscroller-fabric-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*\\.jar"
 	},
 	"lazydfu": {
-		"artifact-regex": "lazydfu-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"litematica": {
-		"artifact-regex": "litematica-fabric-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*\\.jar"
 	},
 	"malilib": {
-		"artifact-regex": "malilib-fabric-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"mc-cli": {
-		"artifact-regex": "mc-cli-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"midnight-controls": {
 		"working-directory": "MidnightControls",
-		"artifact-regex": "midnightcontrols-[0-9]+\\.[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"mod-menu": {
 		"working-directory": "ModMenu",
-		"artifact-regex": "modmenu-v[0-9]+\\.[0-9]+\\.[0-9]+\\+(unknown|[0-9]+\\.[0-9]+(\\.[0-9]+)?)\\.[0-9a-z]+\\.jar"
+		"artifact-regex": ".*(?<!-sources)\\.jar"
 	},
 	"reeses-sodium-options": {
-		"artifact-regex": "reeses_sodium_options-[0-9]+\\.[0-9]+\\.[0-9]+\\+mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-(rev\\.)?[0-9a-z]+\\.jar"
+		"artifact-regex": ".*(?<!-sources)\\.jar"
 	},
 	"replay-mod": {
 		"working-directory": "ReplayMod",
 		"build-command": "./gradlew :1.20.1:build && ./gradlew --stop",
 		"artifact-directory": "versions/1.20.1/build/libs",
-		"artifact-regex": "replaymod-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+-[0-9]+-[0-9a-z]+\\.jar"
+		"artifact-regex": ".*(?<!-obf)\\.jar"
 	},
 	"roughly-enough-items": {
 		"working-directory": "RoughlyEnoughItems",
 		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
-		"artifact-regex": "RoughlyEnoughItems-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*fabric\\.jar"
 	},
 	"shared-waypoints-fabric-client": {
 		"working-directory": "SharedWaypointsFabricClient",
-		"artifact-regex": "sharedwaypoints-client-mod-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"shulker-box-tooltip": {
 		"working-directory": "ShulkerBoxTooltip",
 		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
-		"artifact-regex": "shulkerboxtooltip-fabric-[0-9]+\\.[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"simple-voice-chat": {
 		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
-		"artifact-regex": "voicechat-fabric-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"sodium-extra": {
 		"working-directory": "sodium-extra-fabric",
-		"artifact-regex": "sodium-extra-[0-9]+\\.[0-9]+\\.[0-9]+\\+mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-(rev\\.)?[0-9a-z]+\\.jar"
+		"artifact-regex": ".*(?<!-sources)\\.jar"
 	},
 	"sodium": {
 		"working-directory": "sodium-fabric",
 		"build-command": "./gradlew -Pbuild.release=true build && ./gradlew --stop",
-		"artifact-regex": "sodium-fabric-mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"syncmatica": {
-		"artifact-regex": "syncmatica-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"tweakermore": {
 		"build-command": "./gradlew :1.20.1:build && ./gradlew --stop",
 		"artifact-directory": "versions/1.20.1/build/libs",
-		"artifact-regex": "tweakermore-mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-v[0-9]+\\.[0-9]+\\.[0-9]+(-[A-Z]+)?\\.jar"
+		"artifact-regex": ".*(?<!-sources)\\.jar"
 	},
 	"tweakeroo": {
-		"artifact-regex": "tweakeroo-fabric-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
+		"artifact-regex": ".*\\.jar"
 	},
 	"worldedit-cui": {
 		"working-directory": "WorldEditCUI",
-		"artifact-regex": "WorldEditCUI-[0-9]+\\.[0-9]+(\\.[0-9]+)?\\+[0-9]+(-[A-Z]+)?\\.jar"
+		"artifact-regex": ".*\\.jar"
 	}
 }
