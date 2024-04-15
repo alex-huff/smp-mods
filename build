@@ -9,6 +9,7 @@ import argparse
 
 DEFAULT_BUILD_COMMAND = './gradlew build && ./gradlew --stop'
 DEFAULT_ARTIFACT_DIRECTORY = 'build/libs'
+DEFAULT_ARTIFACT_REGEX = '.*\\.jar'
 WORKING_DIRECTORY_KEY = 'working-directory'
 BUILD_COMMAND_KEY = 'build-command'
 ARTIFACT_DIRECTORY_KEY = 'artifact-directory'
@@ -36,10 +37,6 @@ invalid_mods = [mod_name for mod_name in to_build if mod_name not in mods]
 if invalid_mods:
 	print(f'invalid mod name: {", ".join(invalid_mods)}', file=sys.stderr)
 	sys.exit(1)
-mods_missing_artifact_regex = [mod_name for mod_name in to_build if ARTIFACT_REGEX_KEY not in json_object[mod_name]]
-if mods_missing_artifact_regex:
-	print(f'{", ".join(mods_missing_artifact_regex)} missing required key "artifact-regex"', file=sys.stderr)
-	sys.exit(1)
 
 artifacts = []
 for mod_name in to_build:
@@ -47,7 +44,7 @@ for mod_name in to_build:
 	working_directory = mod[WORKING_DIRECTORY_KEY] if WORKING_DIRECTORY_KEY in mod else mod_name
 	build_command = mod[BUILD_COMMAND_KEY] if BUILD_COMMAND_KEY in mod else DEFAULT_BUILD_COMMAND
 	artifact_directory = mod[ARTIFACT_DIRECTORY_KEY] if ARTIFACT_DIRECTORY_KEY in mod else DEFAULT_ARTIFACT_DIRECTORY
-	artifact_regex = mod[ARTIFACT_REGEX_KEY]
+	artifact_regex = mod[ARTIFACT_REGEX_KEY] if ARTIFACT_REGEX_KEY in mod else DEFAULT_ARTIFACT_REGEX
 
 	print(f'building mod: {mod_name}')
 	build_status = subprocess.run(build_command, cwd=working_directory, shell=True).returncode

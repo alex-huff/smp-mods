@@ -39,17 +39,14 @@
 	},
 	"iris": {
 		"working-directory": "Iris",
-		"build-command": "$JAVA_HOME/bin/java -jar brachyura-bootstrap-0.jar build",
-		"artifact-regex": ".*\\.jar"
+		"build-command": "$JAVA_HOME/bin/java -jar brachyura-bootstrap-0.jar build"
 	},
 	"itemscroller": {
-		"artifact-regex": ".*\\.jar"
 	},
 	"lazydfu": {
 		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"litematica": {
-		"artifact-regex": ".*\\.jar"
 	},
 	"malilib": {
 		"artifact-regex": ".*[0-9]+\\.jar"
@@ -113,10 +110,8 @@
 		"artifact-regex": ".*(?<!-sources)\\.jar"
 	},
 	"tweakeroo": {
-		"artifact-regex": ".*\\.jar"
 	},
 	"worldedit-cui": {
-		"working-directory": "WorldEditCUI",
-		"artifact-regex": ".*\\.jar"
+		"working-directory": "WorldEditCUI"
 	}
 }
