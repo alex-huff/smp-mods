@@ -1,16 +1,16 @@
 {
 	"architectury-api": {
-		"build-command": "./gradlew :fabric:build",
+		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
 		"artifact-regex": "architectury-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
 	},
 	"cloth-config": {
-		"build-command": "./gradlew :fabric:build",
+		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
 		"artifact-regex": "cloth-config-[0-9]+\\.[0-9]+\\.[0-9]+-fabric\\.jar"
 	},
 	"distant-horizons": {
-		"build-command": "./gradlew :fabric:assemble -PmcVer=1.20.1",
+		"build-command": "./gradlew :fabric:assemble -PmcVer=1.20.1 && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
 		"artifact-regex": "DistantHorizons-fabric-[0-9]+\\.[0-9]+\\.[0-9]+-a-dev-[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
 	},
@@ -70,13 +70,13 @@
 	},
 	"replay-mod": {
 		"working-directory": "ReplayMod",
-		"build-command": "./gradlew :1.20.1:build",
+		"build-command": "./gradlew :1.20.1:build && ./gradlew --stop",
 		"artifact-directory": "versions/1.20.1/build/libs",
 		"artifact-regex": "replaymod-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+-[0-9]+-[0-9a-z]+\\.jar"
 	},
 	"roughly-enough-items": {
 		"working-directory": "RoughlyEnoughItems",
-		"build-command": "./gradlew :fabric:build",
+		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
 		"artifact-regex": "RoughlyEnoughItems-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
 	},
@@ -86,12 +86,12 @@
 	},
 	"shulker-box-tooltip": {
 		"working-directory": "ShulkerBoxTooltip",
-		"build-command": "./gradlew :fabric:build",
+		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
 		"artifact-regex": "shulkerboxtooltip-fabric-[0-9]+\\.[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(\\.[0-9]+)?\\.jar"
 	},
 	"simple-voice-chat": {
-		"build-command": "./gradlew :fabric:build",
+		"build-command": "./gradlew :fabric:build && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
 		"artifact-regex": "voicechat-fabric-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
 	},
@@ -101,14 +101,14 @@
 	},
 	"sodium": {
 		"working-directory": "sodium-fabric",
-		"build-command": "./gradlew -Pbuild.release=true build",
+		"build-command": "./gradlew -Pbuild.release=true build && ./gradlew --stop",
 		"artifact-regex": "sodium-fabric-mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]\\.jar"
 	},
 	"syncmatica": {
 		"artifact-regex": "syncmatica-[0-9]+\\.[0-9]+(\\.[0-9]+)?-[0-9]+\\.[0-9]+\\.[0-9]+\\.jar"
 	},
 	"tweakermore": {
-		"build-command": "./gradlew :1.20.1:build",
+		"build-command": "./gradlew :1.20.1:build && ./gradlew --stop",
 		"artifact-directory": "versions/1.20.1/build/libs",
 		"artifact-regex": "tweakermore-mc[0-9]+\\.[0-9]+(\\.[0-9]+)?-v[0-9]+\\.[0-9]+\\.[0-9]+(-[A-Z]+)?\\.jar"
 	},

@@ -7,7 +7,7 @@ import regex
 import json
 import argparse
 
-DEFAULT_BUILD_COMMAND = './gradlew build'
+DEFAULT_BUILD_COMMAND = './gradlew build && ./gradlew --stop'
 DEFAULT_ARTIFACT_DIRECTORY = 'build/libs'
 WORKING_DIRECTORY_KEY = 'working-directory'
 BUILD_COMMAND_KEY = 'build-command'
@@ -51,7 +51,6 @@ for mod_name in to_build:
 
 	print(f'building mod: {mod_name}')
 	build_status = subprocess.run(build_command, cwd=working_directory, shell=True).returncode
-	subprocess.run('command -v ./gradlew >/dev/null && ./gradlew --stop >/dev/null 2>&1', cwd=working_directory, shell=True)
 	if build_status != 0:
 		print(f'failed building mod: {mod_name}', file=sys.stderr)
 		sys.exit(1)
