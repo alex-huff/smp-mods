@@ -10,7 +10,7 @@
 		"artifact-regex": ".*fabric\\.jar"
 	},
 	"distant-horizons": {
-		"build-command": "./gradlew :fabric:assemble -PmcVer=1.20.1 && ./gradlew --stop",
+		"build-command": "./gradlew :fabric:assemble -PmcVer=1.21 && ./gradlew --stop",
 		"artifact-directory": "fabric/build/libs",
 		"artifact-regex": ".*[0-9]+\\.jar"
 	},
@@ -67,8 +67,8 @@
 	},
 	"replay-mod": {
 		"working-directory": "ReplayMod",
-		"build-command": "./gradlew :1.20.1:build && ./gradlew --stop",
-		"artifact-directory": "versions/1.20.1/build/libs",
+		"build-command": "./gradlew :1.21:build && ./gradlew --stop",
+		"artifact-directory": "versions/1.21/build/libs",
 		"artifact-regex": ".*(?<!-obf)\\.jar"
 	},
 	"roughly-enough-items": {
@@ -105,8 +105,8 @@
 		"artifact-regex": ".*[0-9]+\\.jar"
 	},
 	"tweakermore": {
-		"build-command": "./gradlew :1.20.1:build && ./gradlew --stop",
-		"artifact-directory": "versions/1.20.1/build/libs",
+		"build-command": "./gradlew :1.21:build && ./gradlew --stop",
+		"artifact-directory": "versions/1.21/build/libs",
 		"artifact-regex": ".*(?<!-sources)\\.jar"
 	},
 	"tweakeroo": {
