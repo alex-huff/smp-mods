@@ -48,6 +48,8 @@
 	},
 	"litematica": {
 	},
+	"minihud": {
+	},
 	"malilib": {
 		"artifact-regex": ".*[0-9]+\\.jar"
 	},

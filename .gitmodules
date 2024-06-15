@@ -121,3 +121,6 @@
 	path = WorldEditCUI
 	url = ssh://git@github.com/alex-huff/WorldEditCUI
 	branch = master
+[submodule "minihud"]
+	path = minihud
+	url = ssh://git@github.com/alex-huff/minihud
