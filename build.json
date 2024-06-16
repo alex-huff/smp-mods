@@ -39,7 +39,7 @@
 	},
 	"iris": {
 		"working-directory": "Iris",
-		"build-command": "$JAVA_HOME/bin/java -jar brachyura-bootstrap-0.jar build"
+		"build-command": "./gradlew -Dbuild.release=true build && ./gradlew --stop"
 	},
 	"itemscroller": {
 	},
